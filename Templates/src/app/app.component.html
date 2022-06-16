@@ -1,0 +1,37 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ appTitle }}!
+  </h1>
+  <!--<div *ngIf='appStatus; then cond1 else cond2'>Done</div>-->
+  <ng-container  *ngIf="appStatus; then cond1; else cond2">
+</ng-container>
+  <ng-template #cond1>
+   Status Accepted
+  </ng-template>
+  <ng-template #cond2>
+      Status Rejected
+  </ng-template>
+  <br/>
+  Other way of Template Handling<br>
+  <ng-template [ngIf]='!appStatus'>
+      Status Failed
+     </ng-template>
+
+  <br/>
+ ng  Main Application
+ <div>
+  <table align="center">
+    <tr *ngFor="let code of codes">
+      <td>{{code}}</td></tr>
+  </table>
+  <hr>
+  Enter Your Preferred Colour <input type="text" name="color" [(ngModel)]="color">
+  <br/>Colour Entered: {{color}}
+  <div [ngSwitch]="color" >
+              <p *ngSwitchCase="'red'">Red is shown</p>
+              <p *ngSwitchCase="'blue'">Blue is shown</p>
+              <p *ngSwitchDefault>Unknown</p> 
+        </div> 
+
+</div>
