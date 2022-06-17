@@ -1,0 +1,5 @@
+<h2>Message from parent is: {{msg}}</h2>
+
+<label for="output_msg"></label>
+<input  type="text"  id="output_msg" #newMsg>
+<button (click)="display(newMsg.value)">Send</button>
