@@ -1,0 +1,10 @@
+  <div>
+    <label for="numVal">Number :</label>
+    <input type="text" id="numVal" name="numVal" formControlName="numVal">
+    <div *ngIf="!numVal.valid && (numVal.dirty ||numVal.touched)">
+      <!-- <div *ngIf="numVal.errors.gte"> -->
+        The number should be greater than {{numVal.errors.requiredValue}}
+      </div>
+    </div>
+ 
+  <!-- </div> -->
