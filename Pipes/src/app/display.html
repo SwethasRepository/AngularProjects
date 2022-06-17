@@ -1,0 +1,24 @@
+<h1 align="center">Pipes Application</h1><hr> 
+  <h2>Lowercase: {{ str1 | uppercase }}<br>
+      Uppercase: {{ str2 | lowercase}}<hr>
+      Date Pipe: <br>
+      Date: {{today | date}}<br>
+      Date: {{today | date:'short'}}<br>
+      Date: {{today | date:'medium'}}<br>
+      Date: {{today | date:'shortDate'}}<br>
+      Date: {{today | date:'mediumDate'}}<br>
+      Date: {{today | date:'dd-MM-yy HH:mm'}}<br><hr>
+      Slice Pipe:<br>
+      {{ str3 | slice:5:10}}<br>
+      {{ str3 | slice:-10}}<hr>
+      Number pipe:<br>
+      {{num | number}}<br>
+      {{num | number:'7.1-5'}}<hr>
+      Percent Pipe:<br>
+      {{ per | percent}}<br>
+      {{ per | percent:'1.2-2'}}<hr>
+      Currrency Pipe:
+      {{amt | currency}}<br>
+      {{amt | currency:'INR'}}
+  </h2>
+    `

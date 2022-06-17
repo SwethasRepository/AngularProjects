@@ -1,0 +1,52 @@
+<!-- <!DOCTYPE html>    
+<html>    
+<head>    
+    <title></title>    
+    <meta charset="utf-8" />    
+    <style>    
+      table {    
+          font-family: arial, sans-serif;    
+          border-collapse: collapse;    
+          width: 100%;    
+      }    
+      
+      td, th {    
+          border: 1px solid #dddddd;    
+          text-align: left;    
+          padding: 8px;    
+      }    
+      
+      tr:nth-child(even) {    
+          background-color: #dddddd;        
+      }            
+  </style>   
+</head>    
+<body>    
+    <h1 align="center">{{title}}</h1>
+    <table align="center" border="1" cellpadding="4" cellspacing="4">    
+        <thead>    
+            <tr>    
+                <th style="background-color: Yellow;color: blue">Code</th>    
+                <th style="background-color: Yellow;color: blue">Name</th>    
+                <th style="background-color: Yellow;color: blue">Gender</th>    
+                <th style="background-color: Yellow;color: blue">Annual Salary</th>    
+                <th style="background-color: Yellow;color: blue">Date of Birth</th>    
+            </tr>    
+        </thead>    
+        <tbody>    
+            <tr *ngFor='let employee of employees'>    
+                <td>{{employee.code}}</td>    
+                <td>{{employee.name}}</td>    
+                <td>{{employee.gender}}</td>    
+                <td>{{employee.annualSalary}}</td> 
+                <td>{{employee.dateOfBirth}}</td>             
+               </tr>    
+            <tr *ngIf="!employees || employees.length==0">    
+                <td colspan="5">    
+                    No employees to show in the page....    
+                </td>    
+            </tr>    
+        </tbody>    
+    </table>    
+</body>    
+</html>   -->

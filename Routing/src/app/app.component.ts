@@ -1,12 +1,10 @@
 import { Component } from '@angular/core';
-@Component ({
-   selector: 'app-root',
-   template: `
-   <ul>
-      <li><a [routerLink] = "['/Product']">Product</a></li>
-      <li><a [routerLink] = "['/Inventory']">Inventory</a></li>
-   </ul>
-   <router-outlet></router-outlet>
-   `
+
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
 })
-export class AppComponent  { }
+export class AppComponent {
+  title = 'Routing';
+}
